@@ -1,8 +1,18 @@
 .btn-1 {
   border-radius: 10px;
-  border: 2px solid $primary;
+  border: 1px solid $primary;
   display: flex;
   justify-content: center;
   align-items: center;
   color: $white;
+  font-size: 15px;
+  font-weight: 600;
+  width: 130px;
+  height: 45px;
+}
+
+.btn-2 {
+  width: 180px;
+  @extend .btn-1;
+  background-color: $primary;
 }

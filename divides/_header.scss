@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul,
+ol,
+li {
+  list-style-type: none;
+}
+
+.header {
+  font-weight: 500;
+}
+
+.h-container {
+  width: 1250px;
+  background-color: #dfdfdf;
+  margin: 0 auto;
+}
+
+.h-top {
+  width: 100%;
+  padding: 20px 0;
+  background-color: #ffd7d7;
+  display: flex;
+  justify-content: space-between;
+  color: $neutral-600;
+}
+
+.h-top-left {
+  display: flex;
+  gap: 25px;
+  @extend .text-1;
+
+  select {
+    border: none;
+    color: $neutral-600;
+    @extend .text-1;
+  }
+}
+
+.h-top-right {
+  display: flex;
+  gap: 25px;
+  @extend .text-1;
+
+  select {
+    border: none;
+    color: $neutral-600;
+    width: 100px;
+    @extend .text-1;
+  }
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 25px;
+  border-bottom: 2px solid $neutral-800;
+
+  .nav-left {
+    img {
+      width: 150px;
+    }
+  }
+
+  .nav-right {
+    display: flex;
+    gap: 10px;
+  }
+}
+
+.h-nav-ul {
+  display: flex;
+  gap: 28px;
+  color: $neutral-800;
+  margin-right: 260px;
+
+  @extend .text-1;
+}
+
+.h-nav-btn-1 {
+  @extend .btn-1;
+  color: $primary;
+}
+
+.h-nav-btn-2 {
+  @extend .btn-2;
+  color: $white;
+}
