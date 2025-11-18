@@ -7,12 +7,12 @@
   color: $white;
   font-size: 15px;
   font-weight: 600;
-  width: 130px;
+  width: 135px;
   height: 45px;
 }
 
 .btn-2 {
-  width: 180px;
+  width: 190px;
   @extend .btn-1;
   background-color: $primary;
 }

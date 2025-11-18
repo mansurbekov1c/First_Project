@@ -25,14 +25,12 @@ li {
 
 .h-container {
   width: 1250px;
-  background-color: #dfdfdf;
   margin: 0 auto;
 }
 
 .h-top {
   width: 100%;
   padding: 20px 0;
-  background-color: #ffd7d7;
   display: flex;
   justify-content: space-between;
   color: $neutral-600;
@@ -68,8 +66,8 @@ li {
   justify-content: space-between;
   align-items: center;
   padding-top: 10px;
-  padding-bottom: 25px;
-  border-bottom: 2px solid $neutral-800;
+  padding-bottom: 20px;
+  border-bottom: 1px solid $neutral-600;
 
   .nav-left {
     img {
@@ -100,4 +98,58 @@ li {
 .h-nav-btn-2 {
   @extend .btn-2;
   color: $white;
+}
+
+.h-showcase {
+  margin: 80px 0 150px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  text-align: center;
+}
+
+.h-analys {
+  padding: 10px 15px;
+  border-radius: 25px;
+  border: 1px solid $neutral-800;
+  box-shadow: 0 7px 10px #d3d3d3;
+
+  span {
+    @extend .text-1;
+  }
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: $neutral-1000;
+  letter-spacing: -1.2px;
+}
+
+.h-analys-p {
+  @extend .text-1;
+}
+
+.h-showcase-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+
+  .h-showcase-buttons-1 {
+    @extend .btn-2;
+  }
+
+  .h-showcase-buttons-2 {
+    @extend .btn-1;
+    color: $neutral-800;
+    width: 170px;
+    border-color: $neutral-800;
+
+    i {
+      margin-right: 5px;
+      color: $neutral-900;
+    }
+  }
 }
